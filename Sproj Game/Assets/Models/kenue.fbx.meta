@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 81c5e674ffcb9f5458cb64980e3b2c96
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Beard_diffuse
+    second: {fileID: 2800000, guid: 81011f02cc508fe4584f5b9cdd9e461c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Beard_gloss
+    second: {fileID: 2800000, guid: a1f56d7be1f22324d9648eae7fd3738e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Beard_normal
+    second: {fileID: 2800000, guid: 0ec0e99f1cb5b95419892d65319db62a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Beard_specular
+    second: {fileID: 2800000, guid: 75fb70789a959704fadadfd68929157d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Body_diffuse
+    second: {fileID: 2800000, guid: ec2f54fb709f25847959004bc6b8f5d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Body_gloss
+    second: {fileID: 2800000, guid: 90325ad5e44a8bb46a1a792a1ff0b62d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Body_normal
+    second: {fileID: 2800000, guid: 89e11c70ae99a3941b92211c0141469c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Body_specular
+    second: {fileID: 2800000, guid: 06d9315eb7c3f6b4888333e413575d2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Bottom_diffuse
+    second: {fileID: 2800000, guid: 33b0915c55495ca4b8b1045acb331a90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Bottom_gloss
+    second: {fileID: 2800000, guid: 323bfa58420222b4db9f0acdbf93c69b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Bottom_normal
+    second: {fileID: 2800000, guid: cb99766b66fa14a4ca014040fa33788b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Bottom_specular
+    second: {fileID: 2800000, guid: 543c642551abd6946ae31f327dc6d2ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Glove_diffuse
+    second: {fileID: 2800000, guid: a29268c52f4d6aa4ba84bd87dc98dd8b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Glove_gloss
+    second: {fileID: 2800000, guid: 374fa534e11ceba4ca766dc7325c9b6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Glove_normal
+    second: {fileID: 2800000, guid: 334fd22886bfd364a903c813e8d069d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Glove_specular
+    second: {fileID: 2800000, guid: d212750cdaa7afd4e942a0b98d3797aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Hair_diffuse
+    second: {fileID: 2800000, guid: 5817916a83f7f194e872f1eeba67666f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Hair_gloss
+    second: {fileID: 2800000, guid: 71a5aae152f8d5742b6f557dde12fcfb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Hair_normal
+    second: {fileID: 2800000, guid: 5132547d30545ef4fbb0d542f172b7ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Hair_specular
+    second: {fileID: 2800000, guid: c63b14887a4513c4bb7c34437e432790, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Moustache_diffuse
+    second: {fileID: 2800000, guid: cab21579da2b5a0418894e74c5b47c0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Moustache_gloss
+    second: {fileID: 2800000, guid: c001bd09344725148854cfafb914bb00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Moustache_normal
+    second: {fileID: 2800000, guid: e0c803d69a70b904f9f50ace4c7a1571, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Moustache_specular
+    second: {fileID: 2800000, guid: c760e6de29dff1c4b8a3c93f7f410eac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Shoes_diffuse
+    second: {fileID: 2800000, guid: 7702946181ee3da41b798205bfc41bed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Shoes_gloss
+    second: {fileID: 2800000, guid: 71fe0bc4616016c4cbc0f77aa32f89af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Shoes_normal
+    second: {fileID: 2800000, guid: afdbd0a774a8a3246bd22c0619b1fc6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Shoes_specular
+    second: {fileID: 2800000, guid: 380cf72f084b55f498f23b5c1e0b03d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Top_diffuse
+    second: {fileID: 2800000, guid: 888fbcbec01f2504b8321b0bfbc7e437, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Top_gloss
+    second: {fileID: 2800000, guid: 6cc526c8d6c7b9f4b88c50b6c389b013, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Top_normal
+    second: {fileID: 2800000, guid: 26dc22430e9c51f478ed56cff5bd96fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: kenue_Top_specular
+    second: {fileID: 2800000, guid: 5508808c0d834c840bb3a227d2e6225a, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
