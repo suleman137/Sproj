@@ -13,7 +13,7 @@ public class spawn : MonoBehaviour
     private Transform playerTransform;
     // spawnZ is the distance between the camera and the spawning of objects. 
     // Greater the value, further the objects would be from the camera.
-    private float spawnZ = 100f;
+    private float spawnZ = 1000f;
 
     // tileLength is the distance between each spawn. 
     // Greater the tileLength, further the spawned objects would be from each other.
@@ -21,12 +21,12 @@ public class spawn : MonoBehaviour
     private float tileLength = 100f;
 
     // Number of spawns on screen
-    private int tilesOnScreen = 5;
+    private int tilesOnScreen = 1;
     
     private int lastPrefabIndex = 0;
 
     // smaller the safeZone value, earlier the tiles delete from the back
-    private float safeZone = 0.01f;
+    private float safeZone = 0f;
     private List<GameObject> activeTiles;
 
     // Start is called before the first frame update
@@ -36,6 +36,7 @@ public class spawn : MonoBehaviour
         Vector3 Dimensions;
         Dimensions = GameTerrain.GetComponent<Terrain>().terrainData.size;
         tileLength = Dimensions.z;
+        Debug.Log(tileLength);
 
         activeTiles = new List<GameObject>();
         playerTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
@@ -64,7 +65,14 @@ public class spawn : MonoBehaviour
         {
             spawnTile();
         }
-        if (playerTransform.position.z - safeZone > (spawnZ - tilesOnScreen * tileLength))
+        /*if ((playerTransform.position.z - safeZone) > (spawnZ - tilesOnScreen * tileLength)-5)
+        {
+            deleteTile();
+        }*/
+        Debug.Log(("A " , playerTransform.position.z - safeZone));
+        Debug.Log(("B ", spawnZ - tilesOnScreen * tileLength));
+
+        if(activeTiles.Count > 2)
         {
             deleteTile();
         }
