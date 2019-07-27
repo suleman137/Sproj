@@ -16,11 +16,13 @@ public class boatmove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float x = Input.GetAxis("Horizontal");
+        /*float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         Vector3 move = new Vector3(x, 0f, y);
         //transform.Translate(move*speed*Time.deltaTime);
         rb.AddForce(move * speed*Time.deltaTime);
         Debug.Log("AA");
+        */
+        
     }
 }

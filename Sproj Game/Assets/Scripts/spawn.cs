@@ -69,8 +69,8 @@ public class spawn : MonoBehaviour
         {
             deleteTile();
         }*/
-        Debug.Log(("A " , playerTransform.position.z - safeZone));
-        Debug.Log(("B ", spawnZ - tilesOnScreen * tileLength));
+       // Debug.Log(("A " , playerTransform.position.z - safeZone));
+        //Debug.Log(("B ", spawnZ - tilesOnScreen * tileLength));
 
         if(activeTiles.Count > 2)
         {
