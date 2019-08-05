@@ -6,6 +6,7 @@ TagManager:
   tags:
   - boat
   - boatstop
+  - enemy
   layers:
   - Default
   - TransparentFX

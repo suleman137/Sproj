@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     static Animator anim;
-    public float speed = 100.0f;
+    public float speed ;
     public float rotationSpeed = 100.0f;
     static Animator sitting;
     public GameObject cam;
@@ -18,10 +18,13 @@ public class playerController : MonoBehaviour
     public GameObject wall;
     private Transform cam1;
     private bool start = true;
+    private GameObject temp;
 
+    private bool popup = false;
     // Start is called before the first frame update
     void Start()
     {
+
         anim = GetComponent<Animator>();
         sitting = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
@@ -94,10 +97,30 @@ public class playerController : MonoBehaviour
                 }
             }*/
         }
+        // EXPERIMENTAL CODE START
+        if(popup)
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                print("ok");
+               
+                temp.GetComponent<playerController>().enabled=true;
+                temp.GetComponent<Collider>().enabled = true;
+                temp.GetComponentInChildren<Camera>().gameObject.GetComponent<Camera>().enabled=true;
+                temp.GetComponentInChildren<Camera>().gameObject.GetComponent<AudioListener>().enabled = true;
+                temp.tag ="Player";
+                tag = "enemy";
+                GetComponent<playerController>().enabled = false;
+                GetComponent<Collider>().enabled = false;
+                GetComponentInChildren<Camera>().gameObject.GetComponent<AudioListener>().enabled = false;
+                GetComponentInChildren<Camera>().gameObject.GetComponent<Camera>().enabled = false;
+            }
+        }
+        // EXPERIMENTAL CODE END
 
     }
 
-    
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -146,28 +169,62 @@ public class playerController : MonoBehaviour
             {
                 setcam();
             }
-            speed = 200;
+            speed = 10;
             rotationSpeed = 100;
             Debug.Log("yellow");
         }
     }
-
-   /* private void OnCollisionEnter(Collision collision)
+    // EXPERIMENTAL CODE START
+    
+    private void OnTriggerStay(Collider other)
     {
-        if(collision.gameObject.tag == "boatstop")
+        if(other.tag == "enemy")
         {
-            Debug.Log("hello t u");
-            Rigidbody rb = this.gameObject.AddComponent<Rigidbody>();
-            rb.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-            rb.GetComponent<Rigidbody>().useGravity = true;
-            sitting.SetBool("inBoat", false);
-            Debug.Log("helloo");
-            this.transform.parent = null;
-            //boat.gameObject.SetActive(false);
-            inboat = false;
-            Debug.Log("yellow");
+            popup = true;
+            temp = other.gameObject;
         }
-    }*/
+    }
+
+    private void OnGUI()
+    {
+        if(popup)
+        {
+            GUI.Label(new Rect((Screen.width/2),(Screen.height/2),50,50),"Press [E] to possess");
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        popup = false;
+        temp = null;
+    }
+    // EXPERIMENTAL CODE END
+
+
+
+
+
+
+
+
+
+
+
+    /* private void OnCollisionEnter(Collision collision)
+ {
+     if(collision.gameObject.tag == "boatstop")
+     {
+         Debug.Log("hello t u");
+         Rigidbody rb = this.gameObject.AddComponent<Rigidbody>();
+         rb.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+         rb.GetComponent<Rigidbody>().useGravity = true;
+         sitting.SetBool("inBoat", false);
+         Debug.Log("helloo");
+         this.transform.parent = null;
+         //boat.gameObject.SetActive(false);
+         inboat = false;
+         Debug.Log("yellow");
+     }
+ }*/
     private void setcam()
     {
         cam.transform.position = this.transform.position;
