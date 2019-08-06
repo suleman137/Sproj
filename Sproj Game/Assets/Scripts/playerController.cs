@@ -53,7 +53,7 @@ public class playerController : MonoBehaviour
             }*/
 
             // Moving in all directions
-            if (translation != 0)
+            if (translation != 0 || rotation !=0)
             {
                 anim.SetBool("isRunning", true);
             }
@@ -104,16 +104,30 @@ public class playerController : MonoBehaviour
             {
                 print("ok");
                
+               
                 temp.GetComponent<playerController>().enabled=true;
                 temp.GetComponent<Collider>().enabled = true;
                 temp.GetComponentInChildren<Camera>().gameObject.GetComponent<Camera>().enabled=true;
                 temp.GetComponentInChildren<Camera>().gameObject.GetComponent<AudioListener>().enabled = true;
+               //animator controller start
+                if (temp.GetComponent<Animator>().GetBool("fallen"))        //if enemy was fallen
+                {
+                    temp.GetComponent<Animator>().SetBool("fallen", false); // enemy stand up
+                    anim.SetBool("fallen", true);                           //player falls
+                }
+                else                                                       //enemy was standing
+                {
+                    anim.SetBool("fallen", true);                           //player falls
+                    Debug.Log("enemy was standing");
+                }
+                //animator controller end
                 temp.tag ="Player";
                 tag = "enemy";
-                GetComponent<playerController>().enabled = false;
+                 GetComponent<playerController>().enabled = false;
                 GetComponent<Collider>().enabled = false;
                 GetComponentInChildren<Camera>().gameObject.GetComponent<AudioListener>().enabled = false;
                 GetComponentInChildren<Camera>().gameObject.GetComponent<Camera>().enabled = false;
+                
             }
         }
         // EXPERIMENTAL CODE END
@@ -194,8 +208,8 @@ public class playerController : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        popup = false;
-        temp = null;
+            popup = false;
+            temp = null;
     }
     // EXPERIMENTAL CODE END
 
@@ -230,4 +244,5 @@ public class playerController : MonoBehaviour
         cam.transform.position = this.transform.position;
         cam.transform.position = new Vector3(cam.transform.position.x+0.01f, cam.transform.position.y + 1.92f, cam.transform.position.z - 1.09f);
     }
+
 }
